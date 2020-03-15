@@ -1,6 +1,6 @@
 <template>
   <header id="header" :class="{active: isActive}">
-    <a href class="logo">Logo</a>
+    <router-link :to="{ name: 'home'}" class="logo">Logo</router-link>
     <div id="toggle" @click.prevent="changeToggle()"></div>
   </header>
 </template>
