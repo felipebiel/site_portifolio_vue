@@ -5,6 +5,7 @@ import Sobre from '../components/frontend/pages/sobre/Sobre'
 import Servico from '../components/frontend/pages/servico/Servico'
 import Portifolio from '../components/frontend/pages/portifolio/Portifolio'
 import Contato from '../components/frontend/pages/contato/Contato'
+import NProgress from 'nprogress';
 
 Vue.use(VueRouter)
 
@@ -43,3 +44,15 @@ const router = new VueRouter({
 })
 
 export default router
+
+
+router.beforeEach((to, from, next) => {
+  if (to.name) {
+    NProgress.start();
+  }
+  next()
+});
+
+router.afterEach((to, from) => {
+  NProgress.done()
+});
