@@ -1,29 +1,19 @@
-# portifolio-landing-page
+# Site de Portifólio
+Site de portfólio feito com Vue.js e CSS
 
-## Project setup
+Baseado no video : https://www.youtube.com/watch?v=5zkOWf5_lAo&list=WL&index=2&t=65s
+
+## Rodar o projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Rodar o servidor local
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar para Produção
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
