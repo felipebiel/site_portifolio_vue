@@ -8,7 +8,7 @@ import '../node_modules/nprogress/nprogress.css'
 
 Vue.config.productionTip = false
 
-new Vue({
+const app =new Vue({
   router,
   render: function (h) { return h(App) }
 }).$mount('#app')

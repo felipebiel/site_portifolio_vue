@@ -24,7 +24,12 @@ export default {
     changeToggle() {
       this.isActive = !this.isActive;
     }
-  }
+  },
+  watch:{
+    $route (to, from){
+        this.isActive = false;
+    }
+} 
 };
 </script>
 
