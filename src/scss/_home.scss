@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+#header{
     position: absolute;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@ header{
     transition: 0.6s;
 }
 
-header .logo{
+#header .logo{
     position: relative;
     font-weight: bold;
     color: #fff;
@@ -28,14 +28,14 @@ header .logo{
     transition: 0.6s;
 }
 
-header #toggle{
+#header #toggle{
 position: relative;
 width: 30px;
 height: 30px;
 cursor: pointer;
 }
 
-header #toggle::before{
+#header #toggle::before{
     content: '';
     position: absolute;
     top: 7px;
@@ -44,7 +44,7 @@ header #toggle::before{
     background-color: #fff;
 }
 
-header #toggle::after{
+#header #toggle::after{
     content: '';
     position: absolute;
     bottom: 7px;
@@ -53,14 +53,18 @@ header #toggle::after{
     background-color: #fff;
 }
 
+#header.active{
+    transform: translate(-400px);
+}
 
-.banner.active header #toggle::before{
+
+#header.active #toggle::before{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.banner.active header #toggle::after{
+#header.active #toggle::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -182,7 +186,7 @@ header #toggle::after{
 
 @media (max-width: 767px){
 
-    header{
+    #header{
         padding: 20px 50px;
     }
 
@@ -200,6 +204,10 @@ header #toggle::after{
     }
 
     .banner.active{
+        transform: translate(-250px);
+    }
+
+    #header.active{
         transform: translate(-250px);
     }
 

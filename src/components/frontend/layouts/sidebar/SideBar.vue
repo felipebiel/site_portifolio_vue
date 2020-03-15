@@ -2,19 +2,19 @@
   <div id="navigation" :class="{active: isActive}">
     <ul>
       <li>
-        <a href>Home</a>
+        <router-link :to="{ name: 'home'}">Home</router-link>
       </li>
       <li>
-        <a href>Sobre</a>
+        <router-link :to="{ name: 'sobre'}">Sobre</router-link>
       </li>
       <li>
-        <a href>Serviços</a>
+        <router-link :to="{ name: 'servico'}">Serviços</router-link>
       </li>
       <li>
-        <a href>Portifólios</a>
+        <router-link :to="{ name: 'portifolio'}">Portifólios</router-link>
       </li>
       <li>
-        <a href>Contatos</a>
+        <router-link :to="{ name: 'contato'}">Contatos</router-link>
       </li>
     </ul>
   </div>
